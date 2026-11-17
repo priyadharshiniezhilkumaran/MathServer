@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>CHURN RATE CALCULATION</title>
+    </head>
+    <body bgcolor="lightblue">
+        <h3 align="center">CHURN RATE CALCULATION</h3>
+        <h5 align="center">Priyadharshini E (26013770)</h5>
+        <form method="POST">
+            {%csrf_token%}
+            <label>Initial customer:<label>
+            <input type="number" value="{{InitialCust}}" name="Initial_customer"><br><br>
+            <label>present customer:</label>
+            <input type="number" value="{{PresentCust}}" name="Present_customer"><br><br>
+            <input type="submit" value="Calculate"><br><br>
+            <label>Churn rate:</label>
+            <input type="number" value="{{Churn}}"><br><br>
+        </form>
+    </body>
+</html>
